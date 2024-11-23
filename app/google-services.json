@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "185538470606",
+    "firebase_url": "https://lacteosdisanaapp-default-rtdb.firebaseio.com",
+    "project_id": "lacteosdisanaapp",
+    "storage_bucket": "lacteosdisanaapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185538470606:android:97388c23d515fee566269f",
+        "android_client_info": {
+          "package_name": "com.example.lacteosdisanaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBQvPIVBvM1jmv6AqkXnIA4_1ylQK_v1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

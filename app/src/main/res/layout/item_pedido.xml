@@ -1,0 +1,101 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Encabezado con nombre del cliente -->
+        <TextView
+            android:id="@+id/nombreClienteTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cliente: Juan Perez"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#283593"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Fecha del Pedido -->
+        <TextView
+            android:id="@+id/fechaTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Fecha: 2024-10-10"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            app:layout_constraintTop_toBottomOf="@id/nombreClienteTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Estado del Pedido -->
+        <TextView
+            android:id="@+id/estadoTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Estado: En proceso"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            app:layout_constraintTop_toBottomOf="@id/fechaTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Total del Pedido -->
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total: $50.00"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            app:layout_constraintTop_toBottomOf="@id/estadoTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botón para Actualizar Estado -->
+        <Button
+            android:id="@+id/actualizarEstadoButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Actualizar Estado"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#388E3C"
+            app:layout_constraintTop_toBottomOf="@id/totalTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />
+
+        <!-- Botón para Descargar Ticket -->
+        <Button
+            android:id="@+id/descargarTicketButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Descargar Ticket"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1976D2"
+            app:layout_constraintTop_toBottomOf="@id/actualizarEstadoButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:padding="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

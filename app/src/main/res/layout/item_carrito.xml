@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <!-- Nombre del producto -->
+    <TextView
+        android:id="@+id/nombreProductoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Producto"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/eliminarProductoButton"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Precio del producto -->
+    <TextView
+        android:id="@+id/precioProductoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Precio: S/ 0.00"
+        android:textSize="14sp"
+        android:textColor="#388E3C"
+        app:layout_constraintTop_toBottomOf="@id/nombreProductoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/eliminarProductoButton"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botón para eliminar producto -->
+    <ImageView
+        android:id="@+id/eliminarProductoButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_delete"
+        android:contentDescription="Eliminar producto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        app:tint="#F44336" />
+
+    <!-- Contenedor para botones de cantidad -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/precioProductoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp">
+
+        <!-- Botón para decrementar cantidad -->
+        <Button
+            android:id="@+id/decrementarCantidadButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#1A237E"
+            android:text="-"
+            android:textSize="20sp"
+            android:elevation="2dp" />
+
+        <!-- Cantidad del producto -->
+        <TextView
+            android:id="@+id/cantidadTextView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:elevation="2dp"
+            android:layout_marginHorizontal="8dp" />
+
+        <!-- Botón para incrementar cantidad -->
+        <Button
+            android:id="@+id/incrementarCantidadButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#1A237E"
+            android:text="+"
+            android:textSize="20sp"
+            android:elevation="2dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

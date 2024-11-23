@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F9FC"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Pedidos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#283593"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp" />
+
+    <!-- Línea divisoria -->
+    <View
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:background="#283593"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pedidosRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:background="@drawable/recycler_background" />
+</LinearLayout>

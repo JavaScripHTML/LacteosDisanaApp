@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Información de la Empresa"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Sección de Misión -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/misionCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Misión"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/misionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ofrecer productos lácteos frescos y nutritivos, elaborados con amor y cuidado, para satisfacer las necesidades de nuestros clientes y contribuir al desarrollo económico y social de nuestra región, mediante una gestión eficiente y sostenible."
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Sección de Visión -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/visionCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/misionCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visión"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/visionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ser una empresa líder en la producción y comercialización de productos lácteos de alta calidad, reconocida por su innovación y compromiso con la satisfacción del cliente y el bienestar de la comunidad."
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Sección de Ubicación -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ubicacionCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/visionCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubicación"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/ubicacionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jr. Yahuar Huaca N° 1131 - Baños del Inca"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Sección de Contacto -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/contactoCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/ubicacionCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contacto"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/contactoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="921 787 981"
+                android:textSize="14sp"
+                android:textColor="#757575"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botón -->
+    <Button
+        android:id="@+id/btnAbrirMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir Mapa"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#1976D2"
+        android:elevation="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/contactoCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

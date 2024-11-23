@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/background_item_categoria">
+
+    <!-- Nombre de la categoría -->
+    <TextView
+        android:id="@+id/nombreCategoriaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la Categoría"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <!-- Descripción de la categoría -->
+    <TextView
+        android:id="@+id/descripcionCategoriaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Breve descripción de la categoría."
+        android:textSize="16sp"
+        android:textColor="#5C6BC0"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:elevation="6dp">
+
+    <!-- Imagen del producto -->
+    <ImageView
+        android:id="@+id/imagenProductoImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_producto_placeholder"
+        android:contentDescription="Imagen del producto"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="4dp" />
+
+    <!-- Detalles del producto -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/imagenProductoImageView"
+        app:layout_constraintEnd_toStartOf="@id/agregarCarritoButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/nombreProductoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Producto"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Precio del producto -->
+        <TextView
+            android:id="@+id/precioProductoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S/ 0.00"
+            android:textSize="16sp"
+            android:textColor="#388E3C"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Descripción del producto -->
+        <TextView
+            android:id="@+id/descripcionProductoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción breve del producto"
+            android:textSize="14sp"
+            android:textColor="#5C6BC0"
+            android:maxLines="3"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+    <!-- Botón de acción (símbolo "+") -->
+    <Button
+        android:id="@+id/agregarCarritoButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="+"
+        android:textSize="24sp"
+        android:backgroundTint="#1976D2"
+        android:textColor="@android:color/white"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
