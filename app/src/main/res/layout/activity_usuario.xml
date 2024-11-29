@@ -17,16 +17,8 @@
         android:gravity="center_vertical"
         android:background="#283593"
         android:paddingStart="16dp"
-        android:paddingEnd="16dp">
-
-        <ImageView
-            android:id="@+id/img_perfil"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_profile"
-            android:layout_marginEnd="8dp"
-            android:contentDescription="Imagen del Perfil"
-            app:tint="@android:color/white" />
+        android:paddingEnd="16dp"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/tv_titulo"

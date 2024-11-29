@@ -55,19 +55,5 @@ public class InfoEmpresaActivity extends AppCompatActivity {
         ubicacionTextView.setText("Ubicación: Jr. Yahuar huaca N° 1131 - Baños del inca");
         contactoTextView.setText("Contacto: +51 921 787 981");
     }
-
-    private void abrirMapa() {
-        // URI para abrir la ubicación en Google Maps
-        String geoUri = "geo:0,0?q=Calle+Principal+123,+Cajamarca,+Perú";
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
-        intent.setPackage("com.google.android.apps.maps");
-
-        // Verificar si hay una app de mapas disponible para manejar la solicitud
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        } else {
-            // Mensaje si no hay ninguna app que pueda abrir el mapa
-            contactoTextView.setText("No se pudo abrir el mapa. Verifique que tenga una aplicación de mapas instalada.");
-        }
-    }
+    
 }

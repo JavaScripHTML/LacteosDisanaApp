@@ -17,7 +17,7 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
         this.descripcion = descripcion;
-        this.cantidad = (cantidad > 0) ? cantidad : 0; // Asegura que la cantidad inicial sea 1
+        this.cantidad = (cantidad > 0) ? cantidad : 0;
     }
 
 

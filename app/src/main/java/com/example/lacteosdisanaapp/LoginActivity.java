@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-
+/*
     private void mostrarDialogoRestablecerContrasena() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Restablecer Contraseña");
@@ -119,5 +119,5 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(LoginActivity.this, "Error al enviar el correo", Toast.LENGTH_SHORT).show();
                     }
                 });
-    }
+    }*/
 }
